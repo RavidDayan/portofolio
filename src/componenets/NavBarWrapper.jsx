@@ -7,8 +7,8 @@ export default function NavBarWrapper() {
   return (
     <Navbar className="gold" expand="sm" style={{ position: 'sticky', top: 0, zIndex: 1000 }}>
       <Container className="d-inline-flex">
-        <Navbar.Toggle className="gold" aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav ">
           <Nav className="mx-auto">
             <Nav.Link href="#portoPicture" className="gold">
               about me
@@ -24,9 +24,6 @@ export default function NavBarWrapper() {
             </Nav.Link>
             <Nav.Link href="#skills" className="gold">
               Skills
-            </Nav.Link>
-            <Nav.Link href="#contactme" className="gold">
-              Contact
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

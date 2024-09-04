@@ -9,6 +9,10 @@ body {
 .text-color{
   color:#cfc09f
 }
+.navbar-toggler{
+  background: linear-gradient(to bottom, #cfc09f 27%, #ffecb3 40%, #694f1c 78%);  
+
+}
 h2{
   font-weight:bolder
 }
