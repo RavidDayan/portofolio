@@ -10,9 +10,10 @@ export default function Skills() {
       <Container>
         <Row>
           {skillData().map((skillName, index) => {
+            console.log(index)
             return (
-              <Col lg={2} md={4} sm={6}>
-                <SvgTemplate svgName={skillName} key={index} />
+              <Col lg={2} md={4} sm={6} key={index}>
+                <SvgTemplate svgName={skillName} />
               </Col>
             );
           })}

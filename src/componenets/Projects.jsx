@@ -10,8 +10,8 @@ export default function Projects() {
         </h2>
         {projectsData().map((project, index) => {
           return (
-            <Col className="p-2"lg={6}>
-              <ProjectCard project={project} key={index} />
+            <Col className="p-2"lg={6} key={index}>
+              <ProjectCard project={project}  />
             </Col>
           );
         })}
