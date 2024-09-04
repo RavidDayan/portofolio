@@ -11,7 +11,7 @@ export default function Projects() {
         {projectsData().map((project, index) => {
           return (
             <Col className="p-2"lg={6} key={index}>
-              <ProjectCard project={project}  />
+              <ProjectCard project={project}  key={index}/>
             </Col>
           );
         })}

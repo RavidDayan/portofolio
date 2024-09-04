@@ -13,7 +13,7 @@ export default function Skills() {
             console.log(index)
             return (
               <Col lg={2} md={4} sm={6} key={index}>
-                <SvgTemplate svgName={skillName} />
+                <SvgTemplate svgName={skillName}  key={index}/>
               </Col>
             );
           })}
