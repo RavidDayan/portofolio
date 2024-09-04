@@ -1,0 +1,35 @@
+
+body {
+  background-color: #101010;
+}
+
+.text-background{
+  background-color: #212121;
+}
+.text-color{
+  color:#cfc09f
+}
+h2{
+  font-weight:bolder
+}
+.gold {
+  background: linear-gradient(to bottom, #cfc09f 27%, #ffecb3 40%, #694f1c 78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  position: relative;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 400;
+  text-shadow: 1px black;
+}
+.goldN {
+  background: linear-gradient(to bottom, #cfc09f 27%, #ffecb3 40%, #694f1c 78%);  
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  fill: var(--path-color);
+}
+
