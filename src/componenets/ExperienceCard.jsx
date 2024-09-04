@@ -17,14 +17,14 @@ export default function ExperienceCard({
   } else {
     svgPath = null;
   }
-  const showPicture = useMediaQuery({ minWidth: 768 });
+  const showPicture = useMediaQuery({ minWidth: 576 });
   if (left) {
     return (
       <Card className="text-background text-color text-start m-3">
         <Card.Body >
           <Container >
             <Row>
-              <Col lg={10}>
+              <Col sm={10}>
                 <Card.Text>{title}</Card.Text>
                 {notes.map((note, index) => {
                   return <Card.Text key={index}> {note}</Card.Text>;
@@ -34,7 +34,7 @@ export default function ExperienceCard({
                 </Card.Text>
               </Col>
               {showPicture ? (
-                <Col lg={2}>
+                <Col sm={2}>
                   <Image src={svgPath} alt={svg} layout="responsive" width={300} height={300} />
                 </Col>
               ) : null}
@@ -50,11 +50,11 @@ export default function ExperienceCard({
           <Container>
             <Row>
               {showPicture ? (
-                <Col lg={2}>
+                <Col sm={2}>
                   <Image src={svgPath} alt={svg} layout="responsive" width={300} height={300} />
                 </Col>
               ) : null}
-              <Col lg={10}>
+              <Col sm={10}>
                 <Card.Text>{title}</Card.Text>
                 {notes.map((note, index) => {
                   return <Card.Text key={index}> {note}</Card.Text>;

@@ -12,7 +12,7 @@ export default function Skills() {
           {skillData().map((skillName, index) => {
             console.log(index)
             return (
-              <Col lg={2} md={4} sm={6} key={index}>
+              <Col lg={2} xs={4} key={index}>
                 <SvgTemplate svgName={skillName}  key={index}/>
               </Col>
             );
